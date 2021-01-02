@@ -1,0 +1,333 @@
+$logo-font: "Alef", sans-serif;
+$form-font: "Quicksand", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+@import "hero-section";
+@import "skills-section";
+@import "projects-section";
+
+@media screen and (min-width: 1800px) {
+  .splash {
+    left: 0%;
+    width: 100%;
+    height: 200%;
+  }
+  .skills {
+    padding-top: 30rem;
+  }
+}
+@media screen and (min-width: 1700px) {
+  .splash {
+    left: 0%;
+    width: 80%;
+    height: 120%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .splash {
+    left: -10%;
+  }
+}
+
+@media screen and (max-width: 1277px) {
+  /* hero*/
+
+  .hero-text {
+    margin-top: 5rem;
+    p {
+      margin: 0;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
+}
+@media screen and (max-width: 1215px) {
+  .company {
+    margin-top: 5rem;
+  }
+}
+@media screen and (max-width: 1180px) {
+  /* hero*/
+
+  .splash {
+    left: -35%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 50%;
+  }
+  /* hero*/
+  header {
+    h2 {
+      flex: 2 1 10rem;
+      color: deepskyblue;
+    }
+  }
+  .splash {
+    display: none;
+  }
+
+  .hero-text {
+    width: 100%;
+    margin: auto;
+    margin-top: 5rem;
+  }
+  .hero-img {
+    width: 100%;
+    margin: auto;
+    margin-bottom: auto;
+    margin-right: 3rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .hero-text h1 {
+    background: linear-gradient(80deg, #646d5d, #ff5e5e, #83a51f);
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero-text h4 {
+    color: black;
+  }
+  .hero-text p {
+    color: black;
+  }
+  .hero-main {
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .talk-btn {
+    background: #646d5d;
+    color: white;
+  }
+  .skills-text h2 {
+    font-size: 2.5rem;
+  }
+  .skills {
+    min-height: 70vh;
+  }
+  /* projects*/
+  .projects {
+    min-height: 100vh;
+    padding: 0;
+  }
+  .star {
+    width: 30rem;
+  }
+
+  .pro {
+    width: 90%;
+    margin: 3rem auto;
+    min-height: 0;
+  }
+  .project-text h2 {
+    font-size: 2.5rem;
+  }
+  /* footer*/
+  .footer-splashes {
+    bottom: 0;
+    left: 0;
+    min-height: 30vh;
+    h2 {
+      font-size: 3rem;
+    }
+  }
+  .planet {
+    width: 35rem;
+  }
+  .planet1 {
+    top: -50%;
+    left: -13%;
+  }
+  .planet2 {
+    bottom: -10%;
+    right: -15%;
+  }
+}
+@media screen and (max-width: 733px) {
+  /* hero*/
+  .hero-main {
+    display: block;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+  .hero-text {
+    margin: auto;
+    width: 100%;
+    margin-top: 5rem;
+  }
+  .hero-img {
+    margin: auto;
+    width: 100%;
+    margin-right: 3rem;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .icon {
+    width: 60%;
+  }
+  .skills-icons {
+    width: 80%;
+  }
+  .ui,
+  .front,
+  .back {
+    h3 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .pro-title {
+    padding-top: 2rem;
+    text-align: center;
+    h2 {
+      font-size: 2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      color: aqua;
+    }
+    p {
+      font-size: 1.5rem;
+      color: azure;
+      padding: 0rem 0.5rem;
+      margin-bottom: 2rem;
+    }
+    a {
+      padding: 0.9rem 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+  /* footer*/
+  .footer-cont {
+    padding-bottom: 0;
+  }
+}
+@media screen and (max-width: 580px) {
+  .skills {
+    justify-content: center;
+  }
+  .skills-text {
+    margin-bottom: 10rem;
+    margin-right: 2rem;
+  }
+  .pro {
+    margin: 1rem 0rem;
+  }
+  .pro-title {
+    h2 {
+      font-size: 1.7rem;
+      margin-top: 1rem;
+      margin-bottom: 0.7rem;
+      color: aqua;
+    }
+    p {
+      font-size: 1.3rem;
+      color: azure;
+      padding: 0rem 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+    a {
+      padding: 0.9rem 1.5rem;
+      font-size: 1.2rem;
+    }
+  }
+  .footer-splashes {
+    h2 {
+      font-size: 2.4rem;
+    }
+  }
+  .planet {
+    width: 25rem;
+  }
+  .planet1 {
+    top: -70%;
+  }
+  .footer-cont h1 {
+    flex: 1 1 30rem;
+  }
+  .footer-ul img {
+    width: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 446px) {
+  html {
+    font-size: 50%;
+  }
+  .hero-text h4 {
+    font-size: 3rem;
+  }
+  .icons {
+    width: 5rem;
+  }
+  .skills-icons {
+    width: 90%;
+  }
+  .star {
+    width: 20rem;
+  }
+  .star1 {
+    top: -90%;
+  }
+  footer {
+    padding: 1rem 0rem;
+  }
+  .footer-splashes h2 {
+    font-size: 1.7rem;
+  }
+  .talk {
+    font-size: 1.5rem;
+  }
+  .planet1 {
+    top: -80%;
+  }
+  .planet2 {
+    right: -25%;
+    bottom: -20%;
+  }
+  .footer-cont h1 {
+    flex: 1 1 10rem;
+  }
+  .hero-text {
+    margin: 3rem 0rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .planet {
+    width: 20rem;
+  }
+  .planet1 {
+    top: -100%;
+    left: -25%;
+  }
+  .hero-text {
+    margin: 3rem 0rem;
+    h1 {
+      margin-bottom: 0.5rem;
+    }
+    h4 {
+      margin: 2.5rem 0rem;
+    }
+  }
+}
